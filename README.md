@@ -1,5 +1,4 @@
-# dischordes
-Basic repo for dischordes
+Repositorio para el gamebot.
 
 # Uso
 Se da por hecho que tienes python 3. </br>
@@ -8,11 +7,11 @@ Instala pipenv como superusuario (sudo) o administrador </br>
 `pip3 install pipenv`
 
 Clona el repositorio. Por supuesto, se da por hecho que tienes git.  </br>
-`git clone https://github.com/zero-files/dischordes.git`
+`git clone https://github.com/zero-files/dischordes.git`</br>
 `cd dischordes/`
 
 Una vez dentro del proyecto, inicia el el entorno virtual de pipenv </br>
-`pipenv shell`
+`pipenv shell`</br>
 El entorno virtual se reconoce por llevar el nombre del proyecto al incio de la entrada de tu terminal </br>
 `(dischordes) xxx@user:~/path/to/dischores$`
 
@@ -26,16 +25,20 @@ Crea una variable llamada `BOTKEY` y asignale la clave de tu bot de Discord.  </
 
 Inicia el bot (recuerda estar con el entorno virtual activado) </br>
 `python3 src/main.py`
-<br>
+</br>
 
 # Estructura del proyecto 
-</br>
 project/</br>
 ├── src/</br>
 │   ├── commandes/</br>
 │   │   └── ping.py</br>
-│   └── events/</br>
-│       └── on_ready.py</br>
+│   │</br>
+│   ├── events/</br>
+│   │   └── on_ready.py</br>
+│   │</br>
+│   └── localisation/ </br>
+│       └── ... </br>
+│</br>
 ├── bot.py</br>
 └── main.py</br>
 
