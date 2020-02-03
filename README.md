@@ -37,11 +37,22 @@ project/
 │   ├── events/
 │   │   └── on_ready.py
 │   │
-│   └── localisation/ 
-│       └── ... 
+│   ├── localisation/ 
+│   │   └── ... 
+│   │
+│   ├── images/ 
+│   │   └── ... 
+│   │
+│   ├── bot.py
+│   └── main.py
 │
-├── bot.py
-└── main.py
+├── settings.py 
+├── .env
+├── Pipfile
+├── Pipfile.lock
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 El archivo principal es `main.py`</br>
