@@ -34,7 +34,7 @@ project/</br>
 ├── src/</br>
 │   ├── commandes/</br>
 │   │   └── ping.py</br>
-│   └── events</br>
+│   └── events/</br>
 │       └── on_ready.py</br>
 ├── bot.py</br>
 └── main.py</br>
@@ -47,4 +47,4 @@ En éste se setean comandos, eventos y funcionalidades propias del bot.
 
 En la carpeta `commandes` se colocan todos los comandos. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombre del archivo. 
 
-En la carpeta `eventos` se colocan todos los eventos. Cada archivo es un evento compuesto por, sí o sí, una función con el mismo nombre del archivo. 
+En la carpeta `events` se colocan todos los eventos. Cada archivo es un evento compuesto por, sí o sí, una función con el mismo nombre del archivo. 
