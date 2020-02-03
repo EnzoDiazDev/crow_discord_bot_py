@@ -1,4 +1,4 @@
-async def say(context, message):
+async def say(context, *args):
 
-    await context.send(message)
+    await context.send(' '.join(args))
     await context.message.delete()
