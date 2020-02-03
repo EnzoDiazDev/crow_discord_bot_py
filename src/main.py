@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from bot import BOT
 
 # Initial functions
-load_dotenv()
+load_dotenv('.env')
 
 # Initial constants
 KEY = getenv("BOTKEY")
