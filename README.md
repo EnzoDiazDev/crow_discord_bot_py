@@ -28,19 +28,21 @@ Inicia el bot (recuerda estar con el entorno virtual activado) </br>
 </br>
 
 # Estructura del proyecto 
-project/</br>
-├── src/</br>
-│   ├── commandes/</br>
-│   │   └── ping.py</br>
-│   │</br>
-│   ├── events/</br>
-│   │   └── on_ready.py</br>
-│   │</br>
-│   └── localisation/ </br>
-│       └── ... </br>
-│</br>
-├── bot.py</br>
-└── main.py</br>
+```
+project/
+├── src/
+│   ├── commandes/
+│   │   └── ping.py
+│   │
+│   ├── events/
+│   │   └── on_ready.py
+│   │
+│   └── localisation/ 
+│       └── ... 
+│
+├── bot.py
+└── main.py
+```
 
 El archivo principal es `main.py`</br>
 Este archivo setea las variables de entorno e inicia el bot. Iniciará los procesos vitales para el programa. 
