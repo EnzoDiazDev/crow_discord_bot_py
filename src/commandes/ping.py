@@ -1,2 +1,2 @@
-async def ping(message):
-    await message.send("pong!")
+async def ping(context):
+    await context.send("pong!")
