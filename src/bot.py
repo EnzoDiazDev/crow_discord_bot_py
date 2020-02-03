@@ -1,6 +1,10 @@
 # Imports
 from discord.ext import commands
 
+from events.on_ready import on_ready
+
+from commandes.ping import ping
+
 # Initial functions
 
 # Initial constants
@@ -9,12 +13,8 @@ BOT = commands.Bot(command_prefix="!")
 # Initial variables
 
 # Commands
-@BOT.command()
-async def ping(message):
-    await message.send("pong!")
+BOT.command()(ping)
 
 # Events
-@BOT.event
-async def on_ready():
-    print('Beepboop o0/')
+BOT.event(on_ready)
 
