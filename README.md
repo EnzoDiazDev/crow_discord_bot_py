@@ -1,6 +1,6 @@
 Repositorio para el gamebot.
 
-# Uso
+# Primer uso
 Se da por hecho que tienes python 3. </br>
 
 Instala pipenv como superusuario (sudo) o administrador </br>
