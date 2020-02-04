@@ -105,4 +105,4 @@ Para iniciar el bot, debes, con el entorno virtual activado, ejecutar el comando
 Para evitar tener que entrar primero al entorno virtual pipenv, y luego ejecutar el comando de encendido, pipenv permite configurar scripts.</br>
 Por ello, para iniciar el bot, desde tu terminal debes posicionarte en tu proyecto e ingresar el comando <br>
 `pipenv run dev`</br>
-Independientemente de si te encuentras en el entorno virutal o no.
+Independientemente de si te encuentras con en el entorno virutal activado o no.
