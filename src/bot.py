@@ -15,8 +15,9 @@ def import_modules_from_path(modules_path):
 
     for module_file in modules_files:
         module_name,file_extension = os.path.splitext(os.path.split(module_file)[-1])
+        if module_name.startswith("_"): continue
         module = importlib.import_module(module_name)
-
+        
         for y in [getattr(module, x) for x in dir(module)]:
             if callable(y):
                 function_name = y.__name__
@@ -40,4 +41,3 @@ for function in FUNCTIONS:
 
 # Events
 BOT.event(on_ready)
-
