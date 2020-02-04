@@ -5,10 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+python-dotenv = "*"
 
 [packages]
 discord-py = "*"
-python-dotenv = "*"
 
 [requires]
 python_version = "3.7"

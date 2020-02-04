@@ -32,10 +32,12 @@ Inicia el bot (recuerda estar con el entorno virtual activado) </br>
 project/
 ├── src/
 │   ├── commandes/
-│   │   └── ping.py
+│   │   ├── ping.py
+│   │   └── ...
 │   │
 │   ├── events/
-│   │   └── on_ready.py
+│   │   ├── on_ready.py
+│   │   └── ...
 │   │
 │   ├── localisation/ 
 │   │   └── ... 
@@ -47,9 +49,8 @@ project/
 │   └── main.py
 │
 ├── settings.py 
-├── .env
+├── .env*
 ├── Pipfile
-├── Pipfile.lock
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -64,3 +65,39 @@ En éste se setean comandos, eventos y funcionalidades propias del bot.
 En la carpeta `commandes` se colocan todos los comandos. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombre del archivo. 
 
 En la carpeta `events` se colocan todos los eventos. Cada archivo es un evento compuesto por, sí o sí, una función con el mismo nombre del archivo. 
+
+En la carpeta `localisation` se encontrarán todos los archivos de localización. 
+
+En la carpeta `images` se encontrarán todas las imágenes que el bot requiera. 
+
+El archivo `settings.py` contiene la configuración de dotenv. 
+
+El archivo `.env` contiene las siguientes variables de entorno: BOTKEY.</br>
+_* Este archivo debe ser creado manualmente por el dev._
+
+El archivo `Pipfile` contiene la configuraicón del proyecto. Sus dependencias, scripts, etc. </br>
+Este archivo es generado y administrado automáticamente por el entorno virtual pipenv. 
+</br>
+
+# Ramas
+    ...
+</br>
+
+# En el desarrollo
+Las constantes se escriben en mayúsculas y, por supuesto, no deben ser reasignadas. 
+La convención es usar la `NotacionCamello` _(UpperCamelCase)_ para clases, y `minusculas_con_guiones_bajos` para funciones y métodos. 
+
+Los principales archivos que se deben manipular, son los módulos dentro de los paquetes `commandes`, `events`, etc. </br>
+Los modulos serán importados y añadidos al bot -_en `bot.py`_- automáticamente.
+
+Es importante encontrarse en el entorno virtual de pipenv antes de encender el bot.</br>
+Accedes al entorno desde tu terminal posicionandote en tu proyecto e ingresando</br>
+`pipenv shell`
+
+También puedes salir de él con el comando<br>
+`exit`
+
+No olvides instalar módulos mediante `pipenv install MODULENAME`, ya que que de ésta manera pipenv podrá gestionar el modulo correctamente. 
+
+Para iniciar el bot, debes, con el entorno virtual activado, ejecutar el comando </br>
+`python3 src/main.py`
