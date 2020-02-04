@@ -5,12 +5,11 @@ import os
 import sys
 import glob
 import importlib
-#from commandes.ping import ping
-#from commandes.say import say
 
-modules_path = os.path.join(os.path.dirname(__file__),'commandes','')
-
+# Initial functions
 def import_modules_from_path(modules_path):
+
+    functions_list = []
 
     sys.path.append(modules_path)
     modules_files = glob.glob(modules_path+"*.py")
@@ -24,10 +23,10 @@ def import_modules_from_path(modules_path):
                 function_name = y.__name__
                 globals()[function_name] = getattr(module, function_name)
 
-modules_path = os.path.join(os.path.dirname(__file__),'commandes','')
-import_modules_from_path(modules_path)
+                functions_list.append(getattr(module, function_name))
 
-# Initial functions
+    return functions_list
+
 
 # Initial constants
 BOT = commands.Bot(command_prefix="!")
@@ -35,8 +34,12 @@ BOT = commands.Bot(command_prefix="!")
 # Initial variables
 
 # Commands
-BOT.command()(ping)
-BOT.command()(say)
+
+modules_path = os.path.join(os.path.dirname(__file__),'commandes','')
+functions = import_modules_from_path(modules_path)
+
+for function in functions:
+    BOT.command()(function)
 
 # Events
 BOT.event(on_ready)
