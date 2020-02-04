@@ -6,9 +6,8 @@ import sys
 import glob
 import importlib
 
-# Initial functions
+# Functions
 def import_modules_from_path(modules_path):
-
     functions_list = []
 
     sys.path.append(modules_path)
@@ -28,17 +27,15 @@ def import_modules_from_path(modules_path):
     return functions_list
 
 
-# Initial constants
+# Constants
 BOT = commands.Bot(command_prefix="!")
+MODULES_PATH = os.path.join(os.path.dirname(__file__),'commandes','')
+FUNCTIONS = import_modules_from_path(MODULES_PATH)
 
-# Initial variables
+# Variables
 
 # Commands
-
-modules_path = os.path.join(os.path.dirname(__file__),'commandes','')
-functions = import_modules_from_path(modules_path)
-
-for function in functions:
+for function in FUNCTIONS:
     BOT.command()(function)
 
 # Events
