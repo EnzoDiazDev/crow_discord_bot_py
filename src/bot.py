@@ -1,6 +1,6 @@
 # Imports
 from discord.ext import commands
-import discord
+from events.on_ready import on_ready
 import os
 import sys
 import glob
@@ -27,21 +27,17 @@ def import_modules_from_path(modules_path):
 
     return functions_list
 
+
 # Constants
 BOT = commands.Bot(command_prefix="!")
-
-COMMANDES_PATH = os.path.join(os.path.dirname(__file__), 'commandes', '')
-COMMANDES = import_modules_from_path(COMMANDES_PATH)
-
-EVENTS_PATH = os.path.join(os.path.dirname(__file__), 'events', '')
-EVENTS = import_modules_from_path(EVENTS_PATH)
+MODULES_PATH = os.path.join(os.path.dirname(__file__),'commandes','')
+FUNCTIONS = import_modules_from_path(MODULES_PATH)
 
 # Variables
 
 # Commands
-for commande in COMMANDES:
-    BOT.command()(commande)
+for function in FUNCTIONS:
+    BOT.command()(function)
 
 # Events
-for event in EVENTS:
-    BOT.event(event)
+BOT.event(on_ready)
