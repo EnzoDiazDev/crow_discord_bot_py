@@ -33,6 +33,12 @@ project/
 ├── src/
 │   ├── commandes/
 │   │   ├── ping.py
+│   │   ├── _ignored_command.py
+│   │   └── ...
+│   │ 
+│   ├── dm_commandes/
+│   │   ├── private_ping.py
+│   │   ├── _ignored_command.py
 │   │   └── ...
 │   │
 │   ├── events/
@@ -62,7 +68,9 @@ Este archivo setea las variables de entorno e inicia el bot. Iniciará los proce
 El archivo `bot.py` es el bot en cuestión. </br>
 En éste se setean comandos, eventos y funcionalidades propias del bot. 
 
-En la carpeta `commandes` se colocan todos los comandos. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombre del archivo. 
+En la carpeta `commandes` se colocan todos los comandos. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombre del archivo.</br>
+En la carpeta `dm_commandes` se colocan todos los comandos propios de la mensajería privada. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombredel archivo. </br>
+Para ignorar un módulo (un comando), se añade `_` al inicio del nombre del archivo. Así, éste no está importado automáticamente.
 
 En la carpeta `events` se colocan todos los eventos. Cada archivo es un evento compuesto por, sí o sí, una función con el mismo nombre del archivo. 
 

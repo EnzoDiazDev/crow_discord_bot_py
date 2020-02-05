@@ -29,14 +29,20 @@ def import_modules_from_path(modules_path):
 
 # Constants
 BOT = commands.Bot(command_prefix="!")
-COMMANDES_PATH = os.path.join(os.path.dirname(__file__),'commandes','')
+COMMANDES_PATH = os.path.join(os.path.dirname(__file__), 'commandes', '')
 COMMANDES = import_modules_from_path(COMMANDES_PATH)
+
+DM_COMMANDES_PATH = os.path.join(os.path.dirname(__file__), 'dm_commandes', '')
+DM_COMMANDES = import_modules_from_path(DM_COMMANDES_PATH)
 
 # Variables
 
 # Commands
 for commande in COMMANDES:
     BOT.command()(commande)
+
+for dm_commande in DM_COMMANDES:
+    commands.dm_only()(BOT.command()(dm_commande))
 
 # Events
 BOT.event(on_ready)

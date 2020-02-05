@@ -3,10 +3,10 @@ from os import getenv
 from dotenv import load_dotenv
 from bot import BOT
 
-# Initial functions
+# Functions
 load_dotenv('.env')
 
-# Initial constants
+# Constants
 KEY = getenv("BOTKEY")
 
 # Main function
