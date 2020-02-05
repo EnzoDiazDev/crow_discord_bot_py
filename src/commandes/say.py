@@ -1,4 +1,9 @@
 async def say(context, *args):
 
-    await context.send(' '.join(args))
+    message_to_print = '...'
+
+    if (len(args)>0):
+        message_to_print = ' '.join(args)
+
+    await context.send(message_to_print)
     await context.message.delete()
