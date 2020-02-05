@@ -30,14 +30,19 @@ def import_modules_from_path(modules_path):
 
 # Constants
 BOT = commands.Bot(command_prefix="!")
-MODULES_PATH = os.path.join(os.path.dirname(__file__),'commandes','')
-FUNCTIONS = import_modules_from_path(MODULES_PATH)
+
+COMMANDES_PATH = os.path.join(os.path.dirname(__file__), 'commandes', '')
+COMMANDES = import_modules_from_path(COMMANDES_PATH)
+
+EVENTS_PATH = os.path.join(os.path.dirname(__file__),'events', '')
+EVENTS = import_modules_from_path(EVENTS_PATH)
 
 # Variables
 
 # Commands
-for function in FUNCTIONS:
-    BOT.command()(function)
+for commande in COMMANDES:
+    BOT.command()(commande)
 
 # Events
-BOT.event(on_ready)
+for event in EVENTS:
+    BOT.event(event)
