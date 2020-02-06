@@ -6,4 +6,6 @@ async def say(context, *args):
         message_to_print = ' '.join(args)
 
     await context.send(message_to_print)
-    await context.message.delete()
+
+    if(context.guild != None):
+        await context.message.delete()
