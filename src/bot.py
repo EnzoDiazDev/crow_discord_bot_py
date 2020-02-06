@@ -5,6 +5,36 @@ import os
 import sys
 import glob
 import importlib
+import json
+import random
+
+class customBot(commands.Bot):
+    def __init__(self, localisation_path='', localisation='es', **args):
+
+        self._localisation_path = localisation_path
+        self._localisation = localisation
+        self._dico_localisation = self.get_dico_localisation()
+        commands.Bot.__init__(self, **args)
+
+    def get_localisation(self):
+        return self._localisation
+
+    def set_localisation(self, localisation):
+
+        try:
+            self._localisation = localisation
+            self._dico_localisation = self.get_dico_localisation()
+
+        except:
+            self.set_localisation('es')
+
+    localisation = property(get_localisation, set_localisation)
+
+    def localised_string(self, string_id, *parameters):
+        return random.choice(self._dico_localisation.get(string_id, '...')).format(*parameters)
+
+    def get_dico_localisation(self):
+        return json.load(open(os.path.join(self._localisation_path,self._localisation+'.json')))
 
 # Functions
 def import_modules_from_path(modules_path):
@@ -27,15 +57,20 @@ def import_modules_from_path(modules_path):
 
     return functions_list
 
+# Variables
+
+
 # Constants
-BOT = commands.Bot(command_prefix="!")
+
+LOCALISATION_PATH = os.path.join(os.path.dirname(__file__), 'localisation', '')
+
 COMMANDES_PATH = os.path.join(os.path.dirname(__file__), 'commandes', '')
 COMMANDES = import_modules_from_path(COMMANDES_PATH)
 
 DM_COMMANDES_PATH = os.path.join(os.path.dirname(__file__), 'dm_commandes', '')
 DM_COMMANDES = import_modules_from_path(DM_COMMANDES_PATH)
 
-# Variables
+BOT = customBot(command_prefix="!", localisation_path=LOCALISATION_PATH, localisation='es')
 
 # Commands
 for commande in COMMANDES:

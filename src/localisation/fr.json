@@ -1,0 +1,6 @@
+{
+
+	"greet":["Salut {}", "Bonjour {}"],
+	"bye":["Aurevoir {}"],
+	"lang":["Configuration de la langue = Franais (fr)"]
+}

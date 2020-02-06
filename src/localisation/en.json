@@ -1,0 +1,6 @@
+{
+
+	"greet":["Hi {}", "Hello {}"],
+	"bye":["Bye {}"],
+	"lang":["Language configuration = English (en)"]
+}
