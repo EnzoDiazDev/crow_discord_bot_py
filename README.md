@@ -54,6 +54,10 @@ project/
 │   ├── bot.py
 │   └── main.py
 │
+├── tools/
+│   ├── new_commande.py
+│   └── ...
+│    
 ├── settings.py 
 ├── .env*
 ├── Pipfile
@@ -70,7 +74,10 @@ En éste se setean comandos, eventos y funcionalidades propias del bot.
 
 En la carpeta `commandes` se colocan todos los comandos. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombre del archivo.</br>
 En la carpeta `dm_commandes` se colocan todos los comandos propios de la mensajería privada. Cada archivo es un comando compuesto por, sí o sí, una función con el mismo nombredel archivo. </br>
-Para ignorar un módulo (un comando), se añade `_` al inicio del nombre del archivo. Así, éste no está importado automáticamente.
+Para ignorar un módulo (un comando), se añade `_` al inicio del nombre del archivo. Así, éste no está importado automáticamente.</br>
+Para crear comandos automáticamente mediante una plantilla´, usa el script `pipenv run new_commande`, luego escribe el nombre del comando y ve a `src/commandes`.
+
+En la carpeta `tools` se encuentran algunas herramientas de desarrollo.
 
 En la carpeta `events` se colocan todos los eventos. Cada archivo es un evento compuesto por, sí o sí, una función con el mismo nombre del archivo. 
 
