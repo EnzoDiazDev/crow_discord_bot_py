@@ -16,7 +16,7 @@ async def {name}(context):
     # FILENAME is the module filename
     FILENAME = f"_{name}.py"
     
-    file = open(path.join(f"./src/commandes", FILENAME), "w")
+    file = open(path.join(f"./src/commandes", FILENAME), "x")
     file.write(MODEL)
     file.close()
 
