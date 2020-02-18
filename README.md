@@ -1,4 +1,4 @@
-Repositorio para el gamebot.
+Repositorio para el bot Corvus, gamemaster del juego Otherworld para Discord.
 
 # Primer uso
 Se da por hecho que tienes python 3. </br>
