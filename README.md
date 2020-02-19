@@ -1,7 +1,7 @@
 Repositorio para el bot Corvus, gamemaster del juego Otherworld para Discord.
 
 # Primer uso
-Se da por hecho que tienes python 3. </br>
+Se da por hecho que tienes Python 3. </br>
 
 Instala pipenv como superusuario (sudo) o administrador </br>
 `pip3 install pipenv`
