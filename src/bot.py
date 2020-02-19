@@ -36,6 +36,12 @@ class customBot(commands.Bot):
     def get_dico_localisation(self):
         return json.load(open(os.path.join(self._localisation_path,self._localisation+'.json')))
 
+    async def on_command_error(self, ctx, error):
+        if type(error) == commands.errors.PrivateMessageOnly:
+            pass
+        else:
+            return await super().on_command_error(ctx, error)
+
 # Functions
 def import_modules_from_path(modules_path):
     functions_list = []
@@ -77,7 +83,7 @@ for commande in COMMANDES:
     BOT.command()(commande)
 
 for dm_commande in DM_COMMANDES:
-    commands.dm_only()(BOT.command()(dm_commande))
+    BOT.command()(commands.dm_only()(dm_commande))
 
 # Events
 BOT.event(on_ready)
