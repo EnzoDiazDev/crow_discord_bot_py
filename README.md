@@ -1,4 +1,4 @@
-Repositorio para el bot Corvus, gamemaster del juego Otherworld para Discord.
+Repositorio para el bot Crow, gamemaster del juego Otherworld para Discord.
 
 # Primer uso
 Se da por hecho que tienes Python 3. </br>
@@ -7,13 +7,13 @@ Instala pipenv como superusuario (sudo) o administrador </br>
 `pip3 install pipenv`
 
 Clona el repositorio. Por supuesto, se da por hecho que tienes git.  </br>
-`git clone https://github.com/zero-files/dischordes.git`</br>
-`cd dischordes/`
+`git clone https://github.com/zero-files/crow_discord_bot.git`</br>
+`cd crow_discord_bot/`
 
 Una vez dentro del proyecto, inicia el el entorno virtual de pipenv </br>
 `pipenv shell`</br>
 El entorno virtual se reconoce por llevar el nombre del proyecto al incio de la entrada de tu terminal </br>
-`(dischordes) xxx@user:~/path/to/dischores$`
+`(dischordes) xxx@user:~/path/to/crow_discord_bot$`
 
 Instala los módulos requeridos por el proyecto  </br>
 `pipenv install`
@@ -46,6 +46,12 @@ project/
 │   │   └── ...
 │   │
 │   ├── localisation/ 
+│   │   └── ... 
+│   │
+│   ├── game/ 
+│   │   └── ... 
+│   │
+│   ├── database/ 
 │   │   └── ... 
 │   │
 │   ├── images/ 
@@ -84,6 +90,10 @@ En la carpeta `events` se colocan todos los eventos. Cada archivo es un evento c
 En la carpeta `localisation` se encontrarán todos los archivos de localización. 
 
 En la carpeta `images` se encontrarán todas las imágenes que el bot requiera. 
+
+En la carpeta `database` se encontrarán todos los archivos necesarios para conectarse con la API. 
+
+En la carpeta `game` se encontrarán todos los archivos necesarios para el funcionamiento del juego, independiente de discord. 
 
 El archivo `settings.py` contiene la configuración de dotenv. 
 
