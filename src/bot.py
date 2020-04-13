@@ -8,6 +8,8 @@ import importlib
 import json
 import random
 
+print (sys.getdefaultencoding())
+
 class customBot(commands.Bot):
     def __init__(self, localisation_path='', localisation='es', **args):
 
@@ -34,7 +36,8 @@ class customBot(commands.Bot):
         return random.choice(self._dico_localisation.get(string_id, '...')).format(*parameters)
 
     def get_dico_localisation(self):
-        return json.load(open(os.path.join(self._localisation_path,self._localisation+'.json')))
+        print (sys.getdefaultencoding())
+        return json.load(open(os.path.join(self._localisation_path,self._localisation+'.json'), encoding='utf-8'))
 
     async def on_command_error(self, ctx, error):
         if type(error) == commands.errors.PrivateMessageOnly:

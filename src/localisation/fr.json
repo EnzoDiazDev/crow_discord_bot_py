@@ -2,5 +2,8 @@
 
 	"greet":["Salut {}", "Bonjour {}"],
 	"bye":["Aurevoir {}"],
-	"lang":["Configuration de la langue = Franais (fr)"]
+	"lang":["Configuration de la langue = Français (fr)"],
+	"has_join_game":["{} joue maintenant à Otherworld"],
+	"has_already_joined_game":["{} joue déjà à Otherworld"],
+	"error_joining_game":["Une erreur est survenue quand {} a essayé de s'inscrire sur Otherworld : {}"]
 }
