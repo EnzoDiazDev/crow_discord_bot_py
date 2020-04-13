@@ -3,8 +3,8 @@
 	"greet":["Hi {}", "Hello {}"],
 	"bye":["Bye {}"],
 	"lang":["Language configuration = English (en)"],
-	"has_join_game":["{} successfully joined Otherworld"]
-	"has_already_joined_game":["{} has already joined Otherworld"]
+	"has_join_game":["{} successfully joined Otherworld"],
+	"has_already_joined_game":["{} has already joined Otherworld"],
 	"error_joining_game":["An error occured when {} intented to join Otherworld"]
 
 }
