@@ -44,4 +44,5 @@ async def request(method:str, endpoint:str, body:dict={}):
     async with aiohttp.ClientSession() as session:
         async with session.request(method, uri, data=body, headers=headers) as res:
             data = await res.json()
+            data.status_code = res.status
             return data
