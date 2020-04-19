@@ -13,8 +13,8 @@ class ParameterError(Error):
         self.expresion = expresion
         self.mensaje = mensaje
 
-APIKEY = getenv("APIKEY") 
-METHODS = ["get", "patch", "put", "delete"]
+APIKEY = getenv("APIKEY", "")
+METHODS = ["get", "patch", "put", "post", "delete"]
 API_URL = "https://otherworld-api.herokuapp.com" 
 
 def gen_uri(endpoint:str):
