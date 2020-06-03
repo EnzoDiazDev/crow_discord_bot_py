@@ -1,6 +1,5 @@
 # Imports
 from discord.ext import commands
-from events.on_ready import on_ready
 import os
 import sys
 import glob
