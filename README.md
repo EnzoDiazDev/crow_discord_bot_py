@@ -13,7 +13,7 @@ Clona el repositorio. Por supuesto, se da por hecho que tienes git.  </br>
 Una vez dentro del proyecto, inicia el el entorno virtual de pipenv </br>
 `pipenv shell`</br>
 El entorno virtual se reconoce por llevar el nombre del proyecto al incio de la entrada de tu terminal </br>
-`(dischordes) xxx@user:~/path/to/crow_discord_bot$`
+`(crow_discord_bot) xxx@user:~/path/to/crow_discord_bot$`
 
 Instala los módulos requeridos por el proyecto  </br>
 `pipenv install`
@@ -21,7 +21,8 @@ Instala los módulos requeridos por el proyecto  </br>
 Crea el archivo .env </br>
 `touch .env`
 
-Crea una variable llamada `BOTKEY` y asignale la clave de tu bot de Discord.  </br>
+Crea una variable llamada `BOTKEY` y asignale la clave de tu bot de Discord.</br>
+Crea una variable llamada `APIKEY`, y asignale una clave tier 3 (lectura y escritura)</br>
 
 Inicia el bot (recuerda estar con el entorno virtual activado) </br>
 `python3 src/main.py`
@@ -39,10 +40,6 @@ project/
 │   ├── dm_commandes/
 │   │   ├── private_ping.py
 │   │   ├── _ignored_command.py
-│   │   └── ...
-│   │
-│   ├── events/
-│   │   ├── on_ready.py
 │   │   └── ...
 │   │
 │   ├── localisation/ 
@@ -84,8 +81,6 @@ Para ignorar un módulo (un comando), se añade `_` al inicio del nombre del arc
 Para crear comandos automáticamente mediante una plantilla´, usa el script `pipenv run new_commande`, luego escribe el nombre del comando y ve a `src/commandes`.
 
 En la carpeta `tools` se encuentran algunas herramientas de desarrollo.
-
-En la carpeta `events` se colocan todos los eventos. Cada archivo es un evento compuesto por, sí o sí, una función con el mismo nombre del archivo. 
 
 En la carpeta `localisation` se encontrarán todos los archivos de localización. 
 

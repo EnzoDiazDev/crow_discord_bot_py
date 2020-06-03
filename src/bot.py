@@ -86,4 +86,6 @@ for dm_commande in DM_COMMANDES:
     BOT.command()(commands.dm_only()(dm_commande))
 
 # Events
-BOT.event(on_ready)
+@client.event
+async def on_ready():
+    print('Beepboop o0/')
