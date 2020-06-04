@@ -4,7 +4,7 @@ Repositorio para el bot Crow, gamemaster del juego Otherworld para Discord.
 Se da por hecho que tienes Python 3. </br>
 
 Instala pipenv como superusuario (sudo) o administrador </br>
-`pip3 install pipenv`
+`sudo` `pip3 install pipenv`
 
 Clona el repositorio. Por supuesto, se da por hecho que tienes git.  </br>
 `git clone https://github.com/zero-files/crow_discord_bot.git`</br>
@@ -94,21 +94,18 @@ El archivo `settings.py` contiene la configuración de dotenv.
 
 El archivo `.env` contiene las siguientes variables de entorno: BOTKEY.</br>
 _* Este archivo debe ser creado manualmente por el dev._
+  * BOTKEY *el token de tu bot*
+  * APIKEY *el JWT de la api del juego*
+  * SIMON *tu id de discord (opcional)*
 
 El archivo `Pipfile` contiene la configuraicón del proyecto. Sus dependencias, scripts, etc. </br>
 Este archivo es generado y administrado automáticamente por el entorno virtual pipenv. 
 </br>
 
-# Ramas
-    ...
-</br>
-
 # En el desarrollo
-Las constantes se escriben en mayúsculas y, por supuesto, no deben ser reasignadas. 
-La convención es usar la `NotacionCamello` _(UpperCamelCase)_ para clases, y `minusculas_con_guiones_bajos` para funciones y métodos. 
-
-Los principales archivos que se deben manipular, son los módulos dentro de los paquetes `commandes`, `events`, etc. </br>
-Los modulos serán importados y añadidos al bot -_en `bot.py`_- automáticamente.
+Lee el [CODE_OF_CONDUCT.md](https://github.com/zero-files/crow_discord_bot/blob/master/CODE_OF_CONDUCT.md)
+Lee el [CONTRIBUTING.md](https://github.com/zero-files/crow_discord_bot/blob/master/CONTRIBUTING.md)
+Lee los [issues](https://github.com/zero-files/crow_discord_bot/issues)
 
 Es importante encontrarse en el entorno virtual de pipenv antes de encender el bot.</br>
 Accedes al entorno desde tu terminal posicionandote en tu proyecto e ingresando</br>
@@ -122,7 +119,7 @@ No olvides instalar módulos mediante `pipenv install MODULENAME`, ya que que de
 Para iniciar el bot, debes, con el entorno virtual activado, ejecutar el comando </br>
 `python3 src/main.py`
 
-Para evitar tener que entrar primero al entorno virtual pipenv, y luego ejecutar el comando de encendido, pipenv permite configurar scripts.</br>
-Por ello, para iniciar el bot, desde tu terminal debes posicionarte en tu proyecto e ingresar el comando <br>
+Para evitar tener que entrar primero al entorno virtual pipenv, y luego ejecutar el comando de encendido, pipenv permite configurar scripts;</br>
+para iniciar el bot, desde tu terminal debes posicionarte en tu proyecto e ingresar el comando <br>
 `pipenv run dev`</br>
-Independientemente de si te encuentras con en el entorno virutal activado o no.
+independientemente de si te encuentras con en el entorno virutal activado o no.
