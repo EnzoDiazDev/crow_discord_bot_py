@@ -103,15 +103,15 @@ Este archivo es generado y administrado automáticamente por el entorno virtual 
 </br>
 
 # En el desarrollo
-Lee el [CODE_OF_CONDUCT.md](https://github.com/zero-files/crow_discord_bot/blob/master/CODE_OF_CONDUCT.md)
-Lee el [CONTRIBUTING.md](https://github.com/zero-files/crow_discord_bot/blob/master/CONTRIBUTING.md)
-Lee los [issues](https://github.com/zero-files/crow_discord_bot/issues)
+Lee el [CODE_OF_CONDUCT.md](https://github.com/zero-files/crow_discord_bot/blob/master/CODE_OF_CONDUCT.md)</br>
+Lee el [CONTRIBUTING.md](https://github.com/zero-files/crow_discord_bot/blob/master/CONTRIBUTING.md)</br>
+Lee los [issues](https://github.com/zero-files/crow_discord_bot/issues)</br>
 
 Es importante encontrarse en el entorno virtual de pipenv antes de encender el bot.</br>
 Accedes al entorno desde tu terminal posicionandote en tu proyecto e ingresando</br>
 `pipenv shell`
 
-También puedes salir de él con el comando<br>
+También puedes salir de él con el comando</br>
 `exit`
 
 No olvides instalar módulos mediante `pipenv install MODULENAME`, ya que que de ésta manera pipenv podrá gestionar el modulo correctamente. 
@@ -120,6 +120,6 @@ Para iniciar el bot, debes, con el entorno virtual activado, ejecutar el comando
 `python3 src/main.py`
 
 Para evitar tener que entrar primero al entorno virtual pipenv, y luego ejecutar el comando de encendido, pipenv permite configurar scripts;</br>
-para iniciar el bot, desde tu terminal debes posicionarte en tu proyecto e ingresar el comando <br>
+para iniciar el bot, desde tu terminal debes posicionarte en tu proyecto e ingresar el comando </br>
 `pipenv run dev`</br>
 independientemente de si te encuentras con en el entorno virutal activado o no.

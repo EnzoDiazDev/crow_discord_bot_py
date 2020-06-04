@@ -7,12 +7,12 @@ Antes de contribuir en este repositorio, por favor
  * considera formar parte de la discusión en [discord](https://discord.gg/w7us8z2),
  * termina de leer este archivo. 
 
-Crea un issue planteando el problema a resolver y espera una respuesta. <br>
-Sé amable en la discusión y permite que los desarrolladores principales se ofrezcan su ayuda para resolver los problemas serios. <br>
+Crea un issue planteando el problema a resolver y espera una respuesta. </br>
+Sé amable en la discusión y permite que los desarrolladores principales ofrezcan su ayuda para resolver los problemas serios. </br>
 Siéntete libre de crear cualquier issue que tengas en mente. Todas las ideas son bienvenidas, pero asegúrate que ésta no haya sido planteada con anterioridad. 
 
 Sé consciente del roadmap de este proyecto y respeta los tiempos de trabajo. 
-Recuerda que éste es un equipo internacional. Sé consciente de las diferencias de idioma y de horario. <br>
+Recuerda que éste es un equipo internacional. Sé consciente de las diferencias de idioma y de horario. </br>
 Como equipo multidisciplinario, planteamos una filosofía y metodología fija para ponernos de acuerdo. 
 
 ## Pull Request process 
@@ -21,10 +21,10 @@ Como equipo multidisciplinario, planteamos una filosofía y metodología fija pa
 
 ### Estilo principal 
 
-Se toma de Python su filosofía modular; basada en módulos y paquetes. <br>
-Como desafío, nos hemos planteado utilizar un paradigma fuertemente funcional. <br>
+Se toma de Python su filosofía modular; basada en módulos y paquetes. </br>
+Como desafío, nos hemos planteado utilizar un paradigma fuertemente funcional. </br>
 
-Para facilitar esto, definimos una serie de pautas basadas en los estándares actuales.<br>
+Para facilitar esto, definimos una serie de pautas basadas en los estándares actuales.</br>
 *Cualquier otro estilo es bienvenido, se recomienda fuertemente seguir estas sencillas pautas para facilitar las contribuciones.*
 
  * Define las variables y nombres de funciones en `snake_case` minúsculas, excepto en constantes. 
