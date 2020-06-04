@@ -16,9 +16,11 @@ Recuerda que éste es un equipo internacional. Sé consciente de las diferencias
 Como equipo multidisciplinario, planteamos una filosofía y metodología fija para ponernos de acuerdo. 
 
 ## Pull Request process 
+
 ... 
 
 ### Estilo principal 
+
 Se toma de Python su filosofía modular; basada en módulos y paquetes. <br>
 Como desafío, nos hemos planteado utilizar un paradigma fuertemente funcional. <br>
 
@@ -45,13 +47,11 @@ Para facilitar esto, definimos una serie de pautas basadas en los estándares ac
  * Hazle justicia a los lenguajes de scripting como Python y utiliza los scripts de automatización en `/tools`. 
  * Crea tus propios scripts de automatización de forma totalmente libre y con tu propio estilo, en un único archivo.
 
-*Visita el issue [#x](#) para discutir sobre los puntos aquí expuestos.*
+*Visita el issue [#9](https://github.com/zero-files/crow_discord_bot/issues/9) para discutir sobre los puntos aquí expuestos.*
 
 ### Ramas 
 
 ...
-
-
 
 ### Cheatsheet
 
@@ -62,7 +62,6 @@ Su uso es casi obligatorio, pues agiliza la lectura y análisis del código, tan
 Además, permite desarrollar sin la necesidad de comprender a ciencia cierta el código desarrollado por otros, basta con leer un resumen para poder comenzar a trabajar. 
 
 El cheatsheet contiene
-
 * Descripción del módulo
 * Estructura de archivos (paquetes)
 * Funciones
