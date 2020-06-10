@@ -146,3 +146,9 @@ El archivo `settings.py` contiene la configuración de dotenv.
 
 El archivo `Pipfile` contiene la configuración del proyecto. Sus dependencias, scripts, etc. </br>
 Este archivo es generado y administrado automáticamente por el entorno virtual pipenv. 
+
+## License
+This project is licensed under the terms of the MIT license.
+
+---
+`Un proyecto de Zero Files`
