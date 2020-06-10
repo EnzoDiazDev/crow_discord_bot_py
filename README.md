@@ -1,6 +1,6 @@
 Repositorio para el bot Crow, gamemaster del juego Otherworld para Discord.
 
-# Otherworld
+# ‏![](https://cdn.discordapp.com/attachments/406236748289409026/720408898380627978/mini.png) Otherworld
 
 Otherworld es un juego MMO tipo roguelike y coopetitivo, basado en texto y comandos.</br>
 
@@ -33,7 +33,7 @@ Instala los módulos requeridos por el proyecto  </br>
 
 Crea el archivo .env </br>
 `touch .env`
-
+4
 Crea una variable llamada `BOTKEY` y asignale la clave de tu bot de Discord.</br>
 Crea una variable llamada `APIKEY`, y asignale una [clave tier 3](https://github.com/zero-files/otherworld_api) (lectura y escritura)</br>
 
