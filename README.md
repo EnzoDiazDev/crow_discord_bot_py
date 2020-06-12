@@ -104,7 +104,7 @@ project/
 │   ├── bot.py
 │   └── main.py
 │
-├── tools/
+├── scripts/
 │   └── ...
 │    
 ├── settings.py 
@@ -133,7 +133,7 @@ En la carpeta `database` se encontrarán todos los archivos necesarios para cone
 En la carpeta `game` se encontrarán todos los archivos necesarios para el funcionamiento del juego, independiente de Discord. </br>
 Para conocer la estructura del juego y más, lee [/src/game/GAME.md](https://github.com/zero-files/crow_discord_bot/tree/master/src/game/GAME.md)
 
-En la carpeta `tools` se encuentran algunas herramientas y scripts para facilitar el desarrollo y deploys.
+En la carpeta `scripts` se encuentran algunas herramientas y scripts para facilitar el desarrollo y deploys.
 
 El archivo `.env` contiene las siguientes variables de entorno:</br>
 _* Este archivo debe ser creado manualmente por el dev._
