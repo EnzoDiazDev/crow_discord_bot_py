@@ -11,7 +11,7 @@ Crea un issue planteando el problema a resolver y espera una respuesta. </br>
 Sé amable en la discusión y permite que los desarrolladores principales ofrezcan su ayuda para resolver los problemas serios. </br>
 Siéntete libre de crear cualquier issue que tengas en mente. Todas las ideas son bienvenidas, pero asegúrate que ésta no haya sido planteada con anterioridad. 
 
-Sé consciente del roadmap de este proyecto y respeta los tiempos de trabajo. </br>
+Sé consciente del roadmap de este proyecto y abarca los issues en orden. </br>
 Recuerda que éste es un equipo internacional. Sé consciente de las diferencias de idioma y de horario. </br>
 Como equipo multidisciplinario, planteamos una filosofía y metodología fija para ponernos de acuerdo. 
 
@@ -19,7 +19,7 @@ Como equipo multidisciplinario, planteamos una filosofía y metodología fija pa
 
 ... 
 
-### Estilo principal 
+### Estilo de desarrollo
 
 Se toma de Python su filosofía modular; basada en módulos y paquetes. </br>
 Como desafío, nos hemos planteado utilizar un paradigma fuertemente funcional. </br>
@@ -35,17 +35,18 @@ Para facilitar esto, definimos una serie de pautas basadas en los estándares ac
  * Las funciones no deben hacer más de una cosa, y es lo que su nombre indique. Una función, un resultado.
  * Las funciones no deberían superar las 50 lineas de código aproximadamente. Caso contrario, se entiende que a esa función se le delegan demasiadas tareas.
  * Las funciones no deben recibir más de tres parámetros. Saca provecho de los [rest parameters](https://medium.com/understand-the-python/understanding-the-asterisk-of-python-8b9daaa4a558#5720) para una  indefinida cantidad de parámetros. Caso contrario, se entiende que a esa función se le delegan demasiadas tareas.
+ * Comprueba que los parametros de las funciones sean los esperados y dispara errores (`raise`) cuando alguien las utilice de manera incorrecta. 
  * Utiliza un paquete llamado `utils.py` para agrupar funciones generales y misceláneas. 
+ * Siempre utiliza `"""docstrings"""`.
  * Utiliza `"""docstrings"""` advirtiendo que alguna regla se rompe u ocurren efectos secundarios.
- * Utiliza `"""docstrings"""`, aunque sea de forma concreta para que alguien más pueda desarrollar una documentación más clara y completa.
  * Cuando hagas algo complicado o extraño, coloca `#comentaros` explicando el código. 
- * Todos los módulos deben tener un archivo `cheatsheet.md` a modo documentación, tutorial, borrador y todo lo que considere necesario para un perfecto desarrollo del módulo.
-   En este archivo se deberán especificar los paquetes, las funciones, la estructura del modulo, la motivación, los conflictos (incluyendo issues), las ideas, etc. </br>
+ * Todos los paquetes deben tener un archivo `cheatsheet.md` a modo documentación, tutorial, borrador y todo lo que considere necesario para un perfecto desarrollo del módulo.
+   En este archivo se deberán especificar los modulos, las funciones, la estructura del paquete, la motivación, los conflictos (incluyendo issues), las ideas, etc. </br>
    [leer más...](#Cheatsheet)
  * Actualiza el `cheatsheet.md`, actualiza la versión, actualiza el `README.md`, actualiza la documentación. No dejes detalles "para después". 
  * Divide tu flujo de trabajo en tareas concretas, y crea un commit cada vez que finalices.  
  * Hazle justicia a los lenguajes de scripting como Python y utiliza los scripts de automatización en `/tools`. 
- * Crea tus propios scripts de automatización de forma totalmente libre y con tu propio estilo, en un único archivo.
+ * Crea tus propios scripts de automatización de forma totalmente libre y con tu propio estilo.
 
 *Visita el issue [#9](https://github.com/zero-files/crow_discord_bot/issues/9) para discutir sobre los puntos aquí expuestos.*
 
@@ -62,10 +63,10 @@ Su uso es casi obligatorio, pues agiliza la lectura y análisis del código, tan
 Además, permite desarrollar sin la necesidad de comprender a ciencia cierta el código desarrollado por otros, basta con leer un resumen para poder comenzar a trabajar. 
 
 El cheatsheet contiene
-* Descripción del módulo
-* Estructura de archivos (paquetes)
-* Funciones
+* Descripción del paquete
 * Versión
+* Estructura de archivos (modulos)
+* Funciones
 * Lista de issues
 * to-do list
 * Scripts de utilidad
