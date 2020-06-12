@@ -1,12 +1,12 @@
 # Imports
 from os import getenv
-from bot import BOT
+from bot.crow import CROW
 
 # Constants
 KEY = getenv("BOTKEY")
 
 # Main function
 def main():
-    BOT.run(KEY)
+    CROW.run(KEY)
 
 main()
